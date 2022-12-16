@@ -1,0 +1,648 @@
+main{
+}
+button:focus{
+    border: 0;
+    outline: none;
+}
+.profile-main-wrapper{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+    width: 1000px;
+    margin: 0 auto;
+
+}
+.profile-main-wrapper .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.nav .left h2{
+    font-size: 2.4em;
+    margin: 0;
+    padding: 0;
+}
+.nav .left .location{
+    color: var(--mainColor1);
+}
+.left{
+    font-size: .9em;
+}
+.left .location-icon{
+    font-size: .9em;
+}
+.nav .signout{
+    padding: 6px 12px;
+    font-size: 1.1em;
+    font-family: 'Mukta', sans-serif;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(241, 113, 113);
+    color: white;
+    box-shadow: .5px .5px 6px rgba(0,0,0,0.2);
+}
+.profile-content-wrapper{
+    margin-top: 25px;
+    display: flex;
+    flex-basis: 220px;
+    margin-bottom: 100px;
+}
+.profile-content-wrapper .btns{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 220px;
+    align-items: flex-start;
+}
+.profile-content-wrapper .btns .btn{
+    width: 100%;
+    font-family: 'Mukta', sans-serif;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.3em;
+    border-radius: 0;
+    background-color: white;
+    border: 0;
+    box-shadow: .5px .5px 5px rgba(0,0,0,0.2);
+    font-family: 'Mukta', sans-serif;
+    padding: 10px 5px;
+    transition: all 0.5s ease-in-out;
+}
+.profile-content-wrapper .btns .btn:hover{
+    background-color: rgba(95, 153, 230, 0.8);
+}
+.profile-content-wrapper .btns .btn-active{
+    background-color: rgba(95, 153, 230, 0.8);
+}
+.profile-content-wrapper .btns .btn-active-danger{
+    background-color: rgb(238, 115, 98);
+}
+.profile-content-wrapper .btns .btn5:hover{
+    background-color: rgb(238, 115, 98);
+}
+.btns .btn span{
+    margin-left: 5px;
+    font-size: .8em;
+}
+.btns .btn .icon{
+    font-size: 1em;
+    color: rgba(0,0,0,0.8);
+    /*color: rgb(33, 29, 90); */
+}
+.account-detail-wrapper {
+    margin-left: 20px;
+    flex-grow: 20;
+    flex-basis: 220px;
+}
+.account-detail-wrapper .account-detail{
+    /* box-shadow: .5px .5px 5px rgba(0,0,0,0.15); */
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.account-detail p{
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.account-detail hr{
+    width: 100%;
+    margin: 0;
+    height: 1px;
+    background-color: rgba(0,0,0,0.1);
+}
+.account-detail .info-wrapper{
+    padding: 6px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.account-detail .info{
+    width: 280px;
+    margin: 8px 0;
+    margin-right: 5px;
+}
+.account-detail .info small{
+    color: rgba(0,0,0,0.7);
+    text-transform: capitalize;
+}
+.account-detail .info span{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.account-detail .info span p{
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+}
+.info-wrapper .edit-icon{
+    margin-left: 10px;
+    font-size: 1.2em;
+    border-radius: 100px;
+    color: var(--mainColor1);
+    padding: 8px;
+}
+.info-wrapper .edit-icon:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.account-detail-wrapper .save-btn{
+    margin-left: 4px;
+    padding: 3px 10px;
+    border: 0;
+    font-size: .9em;
+    border-radius: 3px;
+    background-color: rgb(95, 153, 230);
+    color: white;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    font-family: 'Mukta', sans-serif;
+}
+.info .save-btn:hover{
+    background-color: rgba(95, 153, 230, 0.5);
+}
+
+.profile-gender .MuiFormLabel-root{
+    top: -11px;
+    left: -3px;
+    font-size: .9em;
+}
+.profile-gender .MuiInputBase-root{
+    height: 30px ;
+    width: 140px;
+}
+.profile-phonenum input{
+    padding: 3px;
+    border-radius: 4px;
+    margin-left: 5px;
+    height: 21px;
+    width: 280px;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+.profile-birthday input{
+    padding: 2px 11px;
+    font-size: 1.2em;
+}
+.profile-name input, .profile-email input{    
+    padding: 3px;
+    height: 21px;
+    width: 280px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+/* adress of delivery wrapper */
+.address-of-delivery{
+    margin-top: 15px;
+    padding-bottom: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    /* box-shadow: .5px .5px 5px rgba(0,0,0,0.15); */
+}
+.address-of-delivery p{
+    padding: 8px 0;
+    margin: 0;
+    padding-left: 20px;
+}
+.address-of-delivery hr{
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.1);
+    width: 100%;
+}
+.address-of-delivery-content{
+    padding: 4px 14px;
+}
+.address-of-delivery-content .MuiFormLabel-root{
+    top: -11px;
+    font-size: .9em;
+}
+.address-of-delivery-content .MuiInputBase-root{
+    height: 30px;
+    width: 220px;
+}
+.address-of-delivery-content small{
+    color: rgba(0,0,0,0.7);
+}
+.address-of-delivery-content form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content
+}
+.address-of-delivery-content .address-form input{
+    padding: 4px;
+    width: 500px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.address-of-delivery-content .address-form .save-btn{
+}
+
+
+/* Customizing MUI select for gender and state */
+.account-detail-wrapper .MuiBox-root label{
+    display: none;
+}
+.state-form small{
+    position: relative;
+    top: 13px;
+    left: 13px
+}
+.profile-gender small{
+    position: relative;
+    top: 13px;
+    left: 13px
+}
+.account-detail-wrapper .MuiBox-root .MuiFormControl-root .MuiSelect-select {
+    font-size: .9em ;
+    font-family: 'Mukta', sans-serif;
+}
+
+/* Order sytlings */
+.order-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+    flex-basis: 250px;
+    flex-grow: 20;
+    box-sizing: border-box;
+}
+.order-wrapper span{
+    display: block;
+}
+.order-wrapper small{
+    font-size: 1.2em;
+}
+.product-orders{
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid rgba(0,0,0,0.1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.product-orders img{
+    width: 140px;
+    height: 140px;
+    margin-right: 15px;
+}
+.product-orders p{
+    padding: 0;
+    margin: 0;
+}
+.product-orders .product-name{
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.productInfo .links a{
+    color: rgb(61, 185, 23);
+    font-size: .9em;
+}
+.productInfo .links .make-review{
+    margin-left: 10px;
+    color: blue
+}
+.order-wrapper .view-more-btn{
+    display: none;
+}
+
+/* recently viewed */
+.addToCart .title{
+    font-weight: 700;
+    font-size: .9em;
+    color: var(--mainColor1);
+}
+.recently-viewed .product-name{
+    margin-bottom: 10px;
+}
+.addToCart .update-wrapper{
+    display: flex;
+    /* justify-content: center; */
+}
+.addToCart .update{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-right: 20px;
+}
+.addToCart .update input{
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.2);
+    margin: 0 5px;
+}
+.addToCart .update .icon{
+    font-size: 1em;
+
+}
+
+/* Logout */
+.logout-wrapper{
+    margin-left: 20px;
+    padding: 9px;
+    box-shadow: .8px .8px 5px rgba(0,0,0,0.15);
+    font-family: 'Mukta', sans-serif;
+    height: max-content;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.warning .icon{
+    color: red;
+    font-size: 1.7em;
+}
+.warning .title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin-left: 10px;
+}
+.btn-wrapper button{
+    padding: 3px 20px;
+    font-size: .9em;
+    font-family: 'Mukta', sans-serif;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+.btn-wrapper .btn1, .btn-wrapper .btn2{ 
+    border: 0;
+    background-color: rgba(95, 153, 230, 0.8);
+    color: white;
+}
+.btn-wrapper .btn2{
+    margin-left: 10px;
+    background-color: red;
+}
+
+/* close Account */
+.closeAccount{
+    flex-shrink:unset;
+    flex-basis: unset;
+    width: 600px;
+}
+.closeAccount .warning-message{
+    white-space: wrap;
+}
+@media (max-width: 962px){
+    
+    .nav .left h2{
+        font-size: 2em;
+    }
+    .nav .signout{
+        padding: 6px 12px;
+        font-size: 1em;
+    }
+    .profile-content-wrapper .btns{
+        display: none;
+    }
+    .profile-main-wrapper{
+        width: calc(100% - 10px);
+        margin: 0 auto;
+    }
+    .profile-content-wrapper{
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .account-detail-wrapper, .order-wrapper, .recently-viewed{
+        margin-left: 0;
+        width: 30%;
+    }
+    .account-detail-wrapper, .order-wrapper, .recently-viewed{
+        width: calc(100% - 0px);
+    }
+    .account-detail-wrapper .title1{
+        padding-left: 4px;
+    }
+    .order-wrapper .view-more-btn{
+        display: block;
+        width: 100%;
+        border: 0;
+        background-color: rgba(95, 153, 230, 0.8);
+        font-family: 'Mukta', sans-serif;
+        border-radius: 4px;
+        padding: 3px 7px;
+        color: white;
+        margin-top: -10px;
+        margin-bottom: 20px;
+
+    }
+    .order-title{
+        margin-top: 10px;
+        margin-bottom: -5px;
+    }
+    .recently-wrapper .order-title{
+        margin-top: 0px;
+    }
+    .mobile .close-account-btn{
+        display: block;
+        width: 100%;
+        border: 0;
+        background-color: rgb(241, 113, 113);
+        font-family: 'Mukta', sans-serif;
+        border-radius: 4px;
+        padding: 3px 7px;
+        color: white;
+        margin-bottom: 20px;
+    }
+    .mobile .closeAccount-wrapper{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2000;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.3);
+    }
+    .mobile .closeAccount{
+        position: relative;
+        top: 30vh;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    /* view more for order and recently viewed */
+    .view-more-wrapper{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 2000;
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    .view-more-wrapper .order-wrapper{
+        margin: 0 5px;
+        margin-top: -5px;
+        width: calc(100vw - 10px)
+    }
+    .view-more-nav{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 5px;
+        font-size: 1.4em;
+        box-sizing: border-box;
+    }
+    .view-more-nav .icon{
+        padding: 5px;
+        transition: all 200ms ease-in-out;
+    }
+    .view-more-nav .icon:hover{
+        background-color: rgba(0,0,0,0.2);
+    }
+    .view-more-nav span{
+        display: block;
+        margin-left: 10px;
+        text-transform: capitalize;
+    }
+    .view-more-wrapper hr{
+        height: 1px;
+        width: 100%;
+        margin: 0;
+        background-color: rgba(0,0,0,0.1);
+    }
+}
+@media (max-width: 735px){
+}
+@media (max-width: 641px){
+    .profile-main-wrapper{
+        font-size: .9em;
+    }
+    .account-detail .info{
+        width: 230px;
+    }
+    .address-of-delivery form{
+        width: 99%;
+    }
+    .address-of-delivery .state-form{
+        width: 99%;
+    }
+    .order-wrapper .product-name{
+        width: 99%;
+        overflow: hidden;
+    }
+    .order-wrapper .links{
+        width: max-content;
+    }
+    .order-wrapper span .order-wrapper p{
+        display: block;
+    }
+}
+@media (max-width: 600px){
+    .account-detail-wrapper, .order-wrapper, .recently-viewed{
+        width: 100%;
+    }
+    .order-wrapper .product-orders{
+        display: flex;
+
+    }
+    .order-wrapper .product-orders .productInfo{
+        width: calc(100% - 152px);
+    }
+    .order-wrapper .product-name{
+        width: 99%;
+        overflow: hidden;
+    }
+
+    .view-more-nav{
+        box-sizing: unset;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    .view-more-nav span{
+        font-size: .8em;
+    }
+    .view-more-wrapper .order-title{
+        font-size: 1em;
+    }
+}
+@media (max-width: 526px){
+    .profile-phonenum input{
+        width: 130px;
+    }
+}
+@media (max-width: 513px){
+    .account-detail .info-wrapper{
+        padding: 0 4px;
+    }
+    .address-of-delivery-content{
+        padding: 0 4px;
+    }
+}
+
+@media (max-width: 491px){
+    .account-detail .info{
+        width: 200px;
+    }
+    .account-detail .info span{
+        /* width: 100%; */
+    }
+    .profile-phonenum input{
+        width: 100px
+    }
+    .account-detail-wrapper .MuiBox-root label{
+        display: none;
+    }
+    .profile-name input, .profile-email input{
+        width: 120px;
+    }
+}
+@media (max-width: 431px){
+    .account-detail .info{
+        width: 100%;
+    }
+    .account-detail .info span{
+        /* width: 100%; */
+    }
+    .profile-phonenum input{
+        width: 100%
+    }
+    .profile-name input, .profile-email input, .profile-birthday input{
+        width: 100%;
+    }
+    .profile-gender .MuiInputBase-root, .profile-gender .MuiFormControl-root, .profile-gender .MuiBox-root{
+        width: 100% !important
+    }
+}
+@media (max-width: 420px){
+    .profile-main-wrapper{
+        font-size: .84em;
+    }
+    .order-wrapper img{
+        width: 110px;
+        height: 110px;
+    }
+    .order-wrapper .product-name{
+        font-size: .8em;
+    }
+    .order-wrapper .product-orders .productInfo{
+        width: calc(100% - 122px);
+    }
+}
+@media (max-width: 360px){
+    .order-wrapper img{
+        width: 100px;
+        height: 100px;
+    }
+    .order-wrapper .product-name{
+        font-size: .8em;
+    }
+    .order-wrapper .product-orders .productInfo{
+        width: calc(100% - 112px);
+    }
+}   

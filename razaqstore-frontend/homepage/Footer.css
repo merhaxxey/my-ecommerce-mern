@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Noto+Sans:ital,wght@0,400;0,500;0,700;1,600&family=Nunito:wght@300;500;700&family=Righteous&family=Ubuntu:wght@300&display=swap');
+.footer-wrapper{
+    color: white;
+    max-width: 100vw;
+    background-color: rgb(9, 32, 53);
+    font-family: 'Nunito', sans-serif;
+    padding:0 35px;
+    padding-top: 10px;
+}
+.footer-part1, .footer-links{
+    display: flex;
+    flex-direction: row;
+}
+.footer-part1{
+    margin-top: 25px;
+    justify-content: center;
+}
+.footer-links article{
+    margin: 0 20px;
+}
+.footer-links .about-razaqStore{
+    margin-left: 0;
+}
+.footer-links article h2{
+    font-size: 1em;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.footer-links article a{
+    display: block;
+    margin: 10px 0;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.85em;
+}
+
+/* footer product news subscribtion */
+.footer-productNews{
+    margin-left: 30px;
+    width: max-content;
+}
+.footer-productNews p{
+    margin: 0;
+    color: rgba(255,255,255,0.7);
+}
+.footer-productNews input{
+    display: block;
+    width: 300px;
+    height: 30px;
+    font-size: 1em;
+    padding-left: 10px;
+    margin-top: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: 0;
+}
+.footer-productNews button{
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 1.05em;
+    margin-top: 5px;
+    border: 0;
+    border-radius: 3px;
+    background-color: rgb(197, 29, 29);
+    color: white;
+    padding: 3px 0;
+}
+
+
+/* "connect with us on solcial media" styling */
+.footer-social-media-links{
+    width: 200px;
+    transform: translateX(63vw);
+}
+.footer-social-media-links p{
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.footer-social-media-links a{
+    display: inline-block;
+    margin: 0 6px;
+}
+.footer-social-media-links .first-link{
+    margin-left: 0;
+}
+.footer-social-media-links a .icon{
+    font-size: 1.9em;
+    color: rgba(255,255,255,0.7)
+}
+
+/* the copyright part of the footer */
+.footer-copyright{
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer-copyright hr{
+    background-color: rgba(255,255,255,0.2);
+    height: 0.5px;
+    width: 30vw;
+}
+.footer-copyright p{
+    color: rgba(255,255,255,0.7);
+    font-size: 0.8em;
+}
+
+
+@media (max-width: 1246px){
+    .footer-links article h2{
+        font-size: 0.9em;
+    }
+    .footer-links article a{
+        font-size: 0.75em;
+    }
+    .footer-social-media-links p{
+        font-size: 0.8em;        
+    }
+    .footer-social-media-links a .icon{
+        font-size: 1.3em;
+    }
+    .footer-copyright p{
+        font-size: 0.75em;
+    }
+    .footer-productNews p{
+        font-size: 0.95em;
+    }
+    .footer-productNews input{
+        width: 280px;
+        height: 30px;
+        font-size: 0.9em;
+    }
+    .footer-productNews button{
+        height: 30px;
+        font-size: 0.95em;
+        padding: 3px 0;
+    }
+    
+}
+@media (max-width: 1052px) {
+    .footer-part1{
+        margin-left: 50px;
+        flex-direction: column-reverse;
+    }
+    .footer-productNews{
+        width: 600px;
+        margin-left: 0;
+        margin-bottom: 35px;
+    }
+    .footer-productNews p{
+        margin-bottom: 10px;
+        font-size: .95em;
+    }
+    .footer-productNews .field-wrapper{
+        display: flex;
+        align-items: center;   
+    }
+    .footer-productNews input{
+        margin-top: 0;
+        border-radius: 0;
+        display: inline-block;
+        width: 430px;
+        height: 33px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .footer-productNews button{
+        margin-top: 0;
+        display: inline-block;
+        width: 110px;
+        height: 33px;
+        border-radius: 0;
+    }
+    .footer-social-media-links{
+        width: 200px;
+        transform: translateX(650px);
+    }
+    .footer-copyright{
+        width: 87vw;
+        justify-content: center;
+    }
+    .footer-copyright hr{
+        width: 28%;
+    }
+}
+@media (max-width: 909px){
+    .footer-part1{
+        margin-left: 20px;
+    }
+    .footer-copyright{
+        width: 90vw;
+        justify-content: center;
+    }
+    .footer-copyright hr{
+        width: 26%;
+    }
+    .footer-social-media-links{
+        width: max-content;
+    }
+    .footer-social-media-links p{
+        font-size: 0.75em;
+        width: 140px;
+    }
+    .footer-social-media-links a{
+        font-size: 0.85em;
+    }
+}
+@media (max-width: 853px){
+    .footer-wrapper{
+        padding-left: 3vw;
+    }
+    .footer-part1{
+        margin-left: 0;
+    }
+    .footer-social-media-links{
+        transform: translateX(0);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    .footer-social-media-links div{
+    }
+    .footer-links article{
+        margin: 0 10px;
+    }
+    .footer-links .about-razaqStore{
+        margin-left: 0;
+    }
+    .footer-copyright{
+        padding-bottom: 10px;
+    }
+    .footer-copyright p{
+        margin: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .footer-copyright hr{
+        margin: 0;
+    }
+}
+@media (max-width: 643px){
+    .footer-wrapper{
+        padding-left: 3.5vw;
+    }
+    .footer-links{
+        flex-wrap: wrap;
+        align-items: unset;
+        justify-content: unset;
+    }
+    .footer-links .make-money{
+        width: 180px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .footer-links article{
+        width: 150px;
+        margin: 0 13px;
+    }
+    .footer-links .about-razaqStore{
+        margin-left: 0;
+    }
+
+    .footer-productNews{
+        width: max-content;
+    }
+    .footer-copyright{
+        width: max-content
+    }
+    .footer-copyright hr{
+        width: 100px;
+    }
+    .footer-copyright p{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+}
+@media (max-width: 581px){
+    .footer-wrapper{
+        padding-left: 3.1vw;
+        padding-right: 3.1vw;
+    }
+    .footer-productNews{
+        width: 100%;
+    }
+    .footer-productNews .field-wrapper{
+        width: 100%;
+    }
+    .footer-productNews button{
+        width: 115px;
+    }
+    .footer-productNews input{
+        width: calc(100% - 115px);
+    }
+    
+}
+@media (max-width: 549px){
+    .footer-productNews p{
+        font-size: 0.87em;
+    }
+    .footer-productNews input{
+        font-size: 0.8em;
+    }
+    .footer-productNews button{
+        font-size: 0.86em;
+    }
+    .footer-links article{
+        margin: 0;
+    }
+    .footer-links .about-razaqStore{
+        margin-left: 0;
+    }
+    .footer-links article h2{
+        font-size: .79em;
+    }
+    .footer-links article a{
+        font-size: .74em;
+    }
+    .footer-social-media-links p{
+        font-size: 0.7em;
+    }
+    .footer-social-media-links a .icon{
+        font-size: 1.2em;
+    }
+    .footer-copyright p{
+        font-size: 0.74em;
+    }
+    .footer-copyright hr{
+        width: 80px;
+    }
+}
+@media (max-width: 480px){
+    .footer-part1{
+    }
+    .footer-part1 article{
+        width: 140px;
+    }
+    .footer-productNews input{
+        width: calc(100% - 90px);
+    }
+    .footer-productNews button{
+        width: 90px;
+    }
+}
+@media (max-width: 457px){
+    .footer-productNews{
+        width: 365px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-productNews .field-wrapper{
+        flex-wrap: wrap;
+    }
+    .footer-productNews input{
+        order: 1;
+        flex-basis: 100%;
+    }
+    .footer-productNews button{
+        order: 2;
+        flex-basis: 100%;
+    }
+    .footer-links{
+        margin-left: auto;
+        margin-right: auto;
+        width: 365px;
+    }
+    .footer-links article{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .footer-links .support{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .footer-links .make-money{
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .footer-copyright hr{
+        display: none;
+    }
+}
+@media (max-width: 390px){
+    .footer-productNews{
+        width: 100%;
+    }
+    .footer-links{
+        width: 100%;
+    }
+    .footer-links article{
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+    .footer-links .support{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .footer-links .make-money{
+        margin-left: 13px;
+        margin-right: 0;
+    }
+}
+@media (max-width: 370px){
+    .footer-productNews p{
+        font-size: 0.82em;
+    }
+    .footer-productNews input{
+        font-size: 0.75em;
+    }
+    .footer-productNews button{
+        font-size: 0.81em;
+    }
+    .footer-links article h2{
+        font-size: .75em;
+    }
+    .footer-links article a{
+        font-size: .69em;
+    }
+    .footer-links article{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .footer-links .support{
+        margin-top: 15px;
+    }
+    .footer-links .make-money{
+        margin-left: 4px;
+    }
+    .footer-social-media-links p{
+        font-size: 0.65em;
+    }
+    .footer-social-media-links a .icon{
+        font-size: 1.1em;
+    }
+    .footer-copyright p{
+        font-size: 0.69em;
+    }    
+}
+@media (max-width: 349px){
+    .footer-wrapper{
+        padding-top: 1px;
+    }
+    .footer-productNews{
+        margin-top: 0;
+    }
+    .footer-productNews p{
+        font-size: 0.78em;
+    }
+    .footer-links{
+        width: 100%;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+    .footer-links article{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        flex-grow: 1;
+        flex-basis: 200px;
+    }
+    .footer-links .links{
+        margin-top: 0;
+    }
+    .footer-links article .link-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 8px;
+    }
+    .footer-links .links h2{
+        margin-bottom: 5px;
+    }
+    .footer-links article .link-wrapper a{
+        margin: 0;
+        width: max-content;
+        font-size: 0.75em;
+        white-space: nowrap;
+    }
+    .footer-links .make-money {
+        margin-left: 0;
+    }
+    .footer-copyright{
+        margin-top: 26px;
+    }
+}
