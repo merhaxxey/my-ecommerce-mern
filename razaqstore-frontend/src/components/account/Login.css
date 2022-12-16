@@ -1,0 +1,27 @@
+.login-account-main{
+    /* height: 100vh; */
+}
+.login-form-wrapper{
+    padding-top: 0;
+}
+#form-id .new-to-razaqStore{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#form-id hr{
+    height: 0.3px;
+    width: 70px;
+    margin: 0;
+}
+#form-id .new-to-razaqStore p{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (max-width: 739px) {
+    #form-id .new-to-razaqStore{
+        font-size: .9em;
+    }
+}
