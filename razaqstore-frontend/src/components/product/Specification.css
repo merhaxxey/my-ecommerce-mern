@@ -1,0 +1,77 @@
+.specifications{
+    box-sizing:border-box;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.specifications .listed-from-array, .specifications .listed-from-object{
+    display: inline-block;
+    width: 410px;
+    padding: 5px 0;
+    box-sizing:border-box;
+    height: max-content;
+    border-radius: 4px;
+    /* box-shadow: .6px .1px 3px rgba(0,0,0,0.2); */
+    border: .4px solid rgba(0,0,0,0.1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+}
+.listed-from-object h3, .listed-from-array h3{
+    font-weight: 500;
+    font-size: .97em;
+    margin-bottom: 12px;
+    border-bottom: .3px solid rgba(0,0,0,0.1);
+    margin-top: 7px;
+    margin-top: 0;
+}
+
+.listed-from-array li{
+    font-weight: 300;
+}
+.listed-from-object li{
+    font-weight: 300;
+}
+.listed-from-object li .specification-key{
+    font-weight: 500;
+}
+.listed-from-object li .specification-values{
+    font-weight: 300;
+    display: inline-block;
+}
+
+@media (max-width: 1222px){
+    .specifications .listed-from-array, .specifications .listed-from-object{
+        width: 49%;
+    }
+}
+@media (max-width: 780px){
+    .specifications{
+        font-size: .9em;
+    }
+    .specifications{
+        display: block;
+        padding: 0;
+    }
+    .specifications .listed-from-array{
+        display: block;
+        width: 100%;
+        border-radius: 0;
+    }
+    .specifications .listed-from-object{
+        display: block;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+@media (max-width: 600px){
+    .description-wrapper {
+        font-size: 0.93em;   
+    }
+    .description-wrapper .title{
+        font-size: 2em;   
+    }
+
+}

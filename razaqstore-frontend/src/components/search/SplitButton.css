@@ -1,0 +1,65 @@
+#selectLabels-FormControl{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .9em;
+}
+#selectLabels-FormControl .title{
+    display: block;
+    margin-right: 10px;
+    font-size: 17px; 
+
+}
+#selectLabels-FormControl .MuiOutlinedInput-root {
+    border: 1px solid white;
+    outline: none;
+    outline-color: white;
+    height: 30px;
+}
+#selectLabels-FormControl .MuiInput-root{
+    border: 0;
+    outline: solid;
+}
+#selectLabels-FormControl .MuiSelect-select{
+    font-size: .95em !important;
+}
+#selectLabels-FormControl .MuiSvgIcon-root{
+    top: 0px;
+}
+
+
+@media (max-width: 962px){
+    #selectLabels-FormControl {
+    }
+    #selectLabels-FormControl .title{
+        color: white;
+        font-family: 'Mukta', sans-serif;
+    }
+    #selectLabels-FormControl .MuiOutlinedInput-root {
+    }
+    #selectLabels-FormControl .MuiInput-root{
+    }
+    #selectLabels-FormControl .MuiSelect-select{
+        font-family: 'Mukta', sans-serif;
+        font-size: 1.1em;
+        color: white;
+    }
+    #selectLabels-FormControl .MuiSvgIcon-root{
+        color: white;
+    }
+}
+@media (max-width: 500px){
+    #selectLabels-FormControl .title{
+        font-size: 15px;
+        display: none;
+    }
+}
+@media (max-width: 400px){
+    #selectLabels-FormControl .MuiSelect-select{
+        font-family: 'Mukta', sans-serif;
+        font-size: .8em !important;
+        color: white;
+        border: 1px solid white;
+    }
+}

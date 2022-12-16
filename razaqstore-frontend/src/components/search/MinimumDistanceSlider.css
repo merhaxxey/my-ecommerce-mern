@@ -1,0 +1,32 @@
+.slider-wrapper .MuiSlider-rail{
+    height: 4px;
+}
+.slider-wrapper .MuiSlider-track{
+    height: 2px;
+}
+
+.slider-wrapper .MuiSlider-thumb{
+    height: 16px;
+    width: 16px;
+
+}
+
+@media (max-width: 447px){
+    .slider-wrapper{
+        box-sizing: border-box;
+        height: 31px;        
+        transform: translateY(-10px);
+    }
+    .slider-wrapper .MuiSlider-rail{
+        height: 3px;
+    }
+    .slider-wrapper .MuiSlider-track{
+        height: 2px;
+    }
+    
+    .slider-wrapper .MuiSlider-thumb{
+        height: 12px;
+        width: 14px;
+    
+    }
+}
